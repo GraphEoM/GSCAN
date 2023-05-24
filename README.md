@@ -1,6 +1,8 @@
 # GSCAN
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 
+![GSCAN_example](https://github.com/GraphEoM/GSCAN/blob/main/pictures/view.png)
+
 # Table of contents
 1. [Dependencies installation](https://github.com/GraphEoM/GSCAN#dependencies-installation)
 2. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
