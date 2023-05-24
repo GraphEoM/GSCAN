@@ -12,7 +12,7 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv t
 # for GPU
 pip install torch==1.12.1+cu113  -f https://download.pytorch.org/whl/cu113/torch_stable.html
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv torch_geometric -f https://data.pyg.org/whl/torch-1.12.0+cu113.html
-``
+```
 
 Others:
 ``` sh
