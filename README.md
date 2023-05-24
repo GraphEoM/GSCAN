@@ -2,6 +2,14 @@
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 
 ![GSCAN_example](https://github.com/GraphEoM/GSCAN/blob/main/pictures/view.png)
+**Two dimensional embeddings of the Cora dataset Planetoid using PCA, colored by clustering results of the three flavours of GSCAN.**
+
+(a) GSCAN without a post process; One can notice the abundance of black points, which indicate data points that are flagged as outliers.
+
+(b) GSCAN with intrinsic diffusion post-process; Here, the only remaining outliers are the ones that have no connectivity to any of the clusters.
+
+(c) GSCAN with GNN-expansion post-process; This result has no outliers remaining. 
+
 
 # Table of contents
 1. [Dependencies installation](https://github.com/GraphEoM/GSCAN#dependencies-installation)
