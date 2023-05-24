@@ -184,7 +184,7 @@ evl(labels,model.gnn_labels(features,edges))
 #### Results in table:
 
 | Method | F1 | ARI | NMI |
-|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|
 | KMeans | 0.678 | 0.438 | 0.487 |
 | GSCAN | 0.640 | 0.314 | 0.513 |
 | GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
