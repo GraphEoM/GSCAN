@@ -1,6 +1,11 @@
 # GSCAN
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 
+# Table of contents
+1. [Dependencies installation](https://github.com/GraphEoM/GSCAN#dependencies-installation)
+2. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
+3. ?
+
 ## Dependencies installation
 
 Torch and Torch-Geometric (for Linux):
