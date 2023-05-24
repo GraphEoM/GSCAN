@@ -4,7 +4,7 @@ GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 # Table of contents
 1. [Dependencies installation](https://github.com/GraphEoM/GSCAN#dependencies-installation)
 2. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
-3. ?
+3. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN)
 
 ## Dependencies installation
 
@@ -125,3 +125,67 @@ gnx
 ```
 <networkx.classes.graph.Graph at 0x1c38c4db1c0>
 
+## Compare GSCAN results to KMeans
+applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
+
+#### Load DAEGC output representation
+``` sh
+import torch
+
+features = torch.from_numpy(np.load(r'data\DAEGC.npy')) # pre-calcualted version of DAEGC output repr.
+features.shape
+```
+torch.Size([2708, 16])
+
+#### Activate & Fit GSCAN
+``` sh
+model = GSCAN(min_cluster_size=75).fit(nodes,edges,using_gae=False)
+model
+```
+
+#### Evaluate results
+
+#### KMeans 
+``` sh
+from sklearn.cluster import KMeans
+from gscan.evaluation import evl
+
+cluster_labels = KMeans(n_clusters=7).fit(nodes).labels_
+evl(labels,cluster_labels)
+```
+{'F1': 0.678024501465173,
+ 'ARI': 0.4383555248258824, 
+ 'NMI': 0.4869760432435305}
+
+#### Vanilla GSCAN
+``` sh
+evl(labels,model.labels_)
+```
+{'F1': 0.6405708370997986,
+ 'ARI': 0.31377142336319763,
+ 'NMI': 0.5135693101580843}
+
+#### GSCAN + Intrinsic Diffusion
+``` sh
+evl(labels,model.diffuse_labels())
+```
+{'F1': 0.7225066525853674,
+ 'ARI': 0.47756092195622213,
+ 'NMI': 0.5253690249400075}
+
+#### GSCAN + GNN Expansion
+``` sh
+evl(labels,model.gnn_labels(nodes,edges))
+```
+{'F1': 0.7302434721526802, 
+ 'ARI': 0.503795736798374, 
+ 'NMI': 0.5340822319262325}
+ 
+#### Results in table:
+
+| Method | F1 | ARI | NMI |
+|:---:|:---:|:---:|:---:|
+| KMeans | 0.678 | 0.438 | 0.487 |
+| GSCAN | 0.640 | 0.314 | 0.513 |
+| GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
+| GSCAN + GNN Expansion | **0.730** | **0.503** | **0.534** |
