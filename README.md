@@ -139,7 +139,7 @@ torch.Size([2708, 16])
 
 #### Activate & Fit GSCAN
 ``` sh
-model = GSCAN(min_cluster_size=75).fit(nodes,edges,using_gae=False)
+model = GSCAN(min_cluster_size=75).fit(features,edges,using_gae=False)
 model
 ```
 
@@ -150,7 +150,7 @@ model
 from sklearn.cluster import KMeans
 from gscan.evaluation import evl
 
-cluster_labels = KMeans(n_clusters=7).fit(nodes).labels_
+cluster_labels = KMeans(n_clusters=7).fit(features).labels_
 evl(labels,cluster_labels)
 ```
 {'F1': 0.678024501465173,
@@ -175,7 +175,7 @@ evl(labels,model.diffuse_labels())
 
 #### GSCAN + GNN Expansion
 ``` sh
-evl(labels,model.gnn_labels(nodes,edges))
+evl(labels,model.gnn_labels(features,edges))
 ```
 {'F1': 0.7302434721526802, 
  'ARI': 0.503795736798374, 
