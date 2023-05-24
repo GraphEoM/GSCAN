@@ -3,7 +3,7 @@ GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 
 ## Dependencies installation
 
-Torch and Torch-Geometric:
+Torch and Torch-Geometric (for Linux):
 ``` sh
 # for CPU:
 pip install torch
