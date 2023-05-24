@@ -1,0 +1,5 @@
+torch_geometric>=2.2.0
+umap_learn>=0.5.3
+networkx>=2.8.8
+numpy>=1.23.5
+torch>=1.12.1
