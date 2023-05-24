@@ -77,8 +77,10 @@ model
 ```
 <gscan.GSCAN at 0x1691c0d31c0>
 
+#### Fit model
+(if using_gae = True, GSCAN use GAE for learning the representation. if False, the repr. using just the original features matrix)
 ``` sh
-model.fit(nodes,edges)
+model.fit(features,edges,using_gae=False)
 ```
 
 #### Labels statistics (Vanilla GSCAN)
@@ -104,7 +106,7 @@ np.unique(diffused_labels,return_counts=True)
 #### Labels statistics (GSCAN + GNN Expansion)
 
 ``` sh
-gnn_labels = model.gnn_labels(nodes,edges)
+gnn_labels = model.gnn_labels(features,edges)
 np.unique(gnn_labels,return_counts=True)
 ```
 (array([0, 1, 2, 3, 4, 5, 6]),
