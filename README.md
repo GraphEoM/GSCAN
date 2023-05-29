@@ -157,6 +157,7 @@ torch.Size([2708, 16])
 model = GSCAN(min_cluster_size=75).fit(features,edges,using_gae=False)
 model
 ```
+<gscan.GSCAN at 0x2224c139580>
 
 #### Evaluate results
 
