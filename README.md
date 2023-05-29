@@ -191,7 +191,7 @@ evl(labels,model.gnn_labels(features,edges))
  'ARI': 0.503795736798374, 
  'NMI': 0.5340822319262325}
  
-#### Results in table:
+#### The same results in table format:
 
 | Method | F1 | ARI | NMI |
 |:---|:---:|:---:|:---:|
