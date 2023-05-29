@@ -93,7 +93,7 @@ model
 <gscan.GSCAN at 0x1691c0d31c0>
 
 #### Fit model
-(if using_gae = True, GSCAN use GAE for learning the representation. if False, the repr. using just the original features matrix)
+(if using_gae = True, GSCAN use GAE for learning the representation. if False, using just the original features matrix)
 ``` sh
 model.fit(features,edges,using_gae=False)
 ```
