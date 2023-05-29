@@ -137,6 +137,11 @@ gnx
 
 ## Compare GSCAN results to KMeans
 applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
+This repr. created by GNN clustering algorithm that published in 2019 in this paper:
+
+[**Attributed Graph Clustering: A Deep Attentional Embedding Approach**](https://arxiv.org/abs/1906.06532)
+
+It using GAE with both reconstruction loss and KL loss to learn latent representation to each node. The final step of this algorithm is to applying the KMeans on the output representation. We want to compare the results of KMeans on DAEGC output to the results of GSCAN.
 
 #### Load DAEGC output representation
 ``` sh
