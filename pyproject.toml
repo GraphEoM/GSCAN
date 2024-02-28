@@ -1,0 +1,34 @@
+[project]
+name = "gscan"
+version = "0.1.0"
+authors = [
+  { name="Etzion Harari", email="etzionhar@gmail.com" },
+]
+description = "package for graph clustering"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dynamic = ["dependencies"]
+
+[project.urls]
+"Homepage" = "https://github.com/GraphEoM/GSCAN/"
+
+[build-system]
+requires = ["hatchling","hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "data",
+  "temp",
+  "pictures",
+]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+filename = "requirements.txt"
