@@ -12,13 +12,47 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 
 (c) GSCAN with GNN-expansion post-process; This result has no outliers remaining. 
 
-
 # Table of contents
-1. [Dependencies installation](https://github.com/GraphEoM/GSCAN#dependencies-installation)
-2. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
-3. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans)
+1. [GSCAN Paper](https://github.com/GraphEoM/GSCAN#GSCAN-Paper)
+2. [Install GSCAN](https://github.com/GraphEoM/GSCAN#Install-GSCAN)
+3. [Dependencies for installation](https://github.com/GraphEoM/GSCAN#dependencies-for-installation)
+4. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
+5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans)
 
-## Dependencies installation
+# GSCAN Paper
+Our full paper available here: [GSCAN Paper](https://openreview.net/forum?id=xazYC6pGO5)
+
+The paper presented in the [LOG 2023 Conference](https://logconference.org/) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster):
+
+![GSCAN_Poster](https://github.com/GraphEoM/GSCAN/blob/main/pictures/GSCAN_Poster.jpg)
+
+If you find **GSCAN** useful in your research, we ask that you cite the following paper:
+
+``` sh
+@inproceedings{harari2023gscan,
+title={{GSCAN}: Graph Stability Clustering for Applications with Noise using Edge-Aware Excess-of-Mass},
+author={Etzion Harari and Naphtali Abudarham and Roee Litman},
+booktitle={The Second Learning on Graphs Conference},
+year={2023},
+url={https://openreview.net/forum?id=xazYC6pGO5}
+}
+```
+
+# Install GSCAN
+To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
+
+``` sh
+git clone https://github.com/GraphEoM/GSCAN.git
+cd GSCAN/dist
+pip install gscan-0.1.0-py3-none-any.whl
+```
+
+After the installation, you can simply import GSCAN:
+``` sh
+from gscan import GSCAN
+```
+
+## Dependencies for installation
 
 Torch and Torch-Geometric (for Linux):
 ``` sh
