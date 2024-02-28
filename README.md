@@ -241,3 +241,6 @@ evl(labels,model.gnn_labels(features,edges))
 | GSCAN | 0.640 | 0.314 | 0.513 |
 | GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
 | GSCAN + GNN Expansion | **0.730** | **0.503** | **0.534** |
+
+## License
+MIT
