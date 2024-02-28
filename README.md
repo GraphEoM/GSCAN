@@ -26,7 +26,7 @@ The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Le
 
 ![GSCAN_Poster](https://github.com/GraphEoM/GSCAN/blob/main/pictures/GSCAN_Poster.jpg)
 
-If you find **GSCAN** useful in your research, we ask that you cite the following paper:
+If you find **GSCAN** useful in your research, you can cite the following paper:
 
 ``` sh
 @inproceedings{harari2023gscan,
