@@ -22,7 +22,7 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 ## GSCAN Paper
 Our full paper available here: [GSCAN Paper](https://openreview.net/forum?id=xazYC6pGO5)
 
-The paper presented in the [LOG 2023 Conference](https://logconference.org/) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster):
+The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster):
 
 ![GSCAN_Poster](https://github.com/GraphEoM/GSCAN/blob/main/pictures/GSCAN_Poster.jpg)
 
