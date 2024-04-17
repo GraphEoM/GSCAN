@@ -1,6 +1,7 @@
 # GSCAN
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 
+
 You can find full code example of using GSCAN for graph-clustering in this [**Google Colab Notebook**](https://colab.research.google.com/drive/1NZjeNUK_19OcFc29zq2mE7IGmBz_ZHy8#scrollTo=vwkQ-sxDJjdt).
 
 ![GSCAN_example](https://github.com/GraphEoM/GSCAN/blob/main/pictures/view.png)
