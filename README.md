@@ -22,9 +22,9 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans-based-GNN-algorithm)
 
 ## GSCAN Paper
-Our full paper available here: [GSCAN Paper](https://openreview.net/forum?id=xazYC6pGO5)
+Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
-The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster):
+The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster) and published in [**PMLR**](https://proceedings.mlr.press/v231/harari24a.html):
 
 ![GSCAN_Poster](https://github.com/GraphEoM/GSCAN/blob/main/pictures/GSCAN_Poster.jpg)
 
