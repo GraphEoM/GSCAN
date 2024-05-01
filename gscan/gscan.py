@@ -1,4 +1,10 @@
+# GSCAN: Graph Stability Clustering for Applications With Noise Using Edge-Aware Excess-of-Mass
+# The full paper published in PLMR:
+# https://proceedings.mlr.press/v231/harari24a.html
 
+# created by Etzion Harari
+
+# Version
 __version__ =  0.9
 
 # import libraries
@@ -855,3 +861,4 @@ class GSCAN:
         return labels
 
 # MIT License
+# created by Etzion Harari

@@ -31,13 +31,19 @@ The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Le
 If you find **GSCAN** useful in your research, you can cite the following paper:
 
 ``` sh
-@inproceedings{harari2023gscan,
-title={{GSCAN}: Graph Stability Clustering for Applications with Noise using Edge-Aware Excess-of-Mass},
-author={Etzion Harari and Naphtali Abudarham and Roee Litman},
-booktitle={The Second Learning on Graphs Conference},
-year={2023},
-url={https://openreview.net/forum?id=xazYC6pGO5}
+
+@InProceedings{harari24gscan,
+  title = 	 {GSCAN: Graph Stability Clustering for Applications With Noise Using Edge-Aware Excess-of-Mass},
+  author =       {Harari, Etzion and Abudarham, Naphtali and Litman, Roee},
+  booktitle = 	 {Proceedings of the Second Learning on Graphs Conference},
+  pages = 	 {9:1--9:15},
+  year = 	 {2024},
+  volume = 	 {231},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Nov},
+  publisher =    {PMLR}
 }
+
 ```
 
 ## Install GSCAN
