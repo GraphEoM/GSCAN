@@ -179,7 +179,7 @@ gnx
 ```
 <networkx.classes.graph.Graph at 0x1c38c4db1c0>
 
-## Compare GSCAN results to KMeans based GNN algorithm
+## Compare GSCAN results to DAEGC (KMeans based GNN algorithm)
 applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
 This repr. created by GNN clustering algorithm that published in 2019 in this paper:
 
@@ -205,7 +205,7 @@ model
 
 #### Evaluate results
 
-#### KMeans 
+#### DAEGC (KMeans based) 
 ``` sh
 from sklearn.cluster import KMeans
 from gscan.evaluation import evl
@@ -245,7 +245,7 @@ evl(labels,model.gnn_labels(features,edges))
 
 | Method | F1 | ARI | NMI |
 |:---|:---:|:---:|:---:|
-| KMeans | 0.678 | 0.438 | 0.487 |
+| DEAGC (KMeans based) | 0.678 | 0.438 | 0.487 |
 | GSCAN | 0.640 | 0.314 | 0.513 |
 | GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
 | GSCAN + GNN Expansion | **0.730** | **0.503** | **0.534** |
