@@ -2,6 +2,7 @@
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 ##### Etzion Harari, Naphtali Abudarham & Roee Litman
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-citeseer)](https://paperswithcode.com/sota/graph-clustering-on-citeseer?p=gscan-graph-stability-clustering-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-cora)](https://paperswithcode.com/sota/graph-clustering-on-cora?p=gscan-graph-stability-clustering-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-pubmed)](https://paperswithcode.com/sota/graph-clustering-on-pubmed?p=gscan-graph-stability-clustering-for)
 
 You can find full code example of using GSCAN for graph-clustering in this [**Google Colab Notebook**](https://colab.research.google.com/drive/1NZjeNUK_19OcFc29zq2mE7IGmBz_ZHy8#scrollTo=vwkQ-sxDJjdt).
 
