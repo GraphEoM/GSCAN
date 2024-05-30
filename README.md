@@ -26,9 +26,9 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 4. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
 5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans-based-GNN-algorithm)
 
-## GSCAN Paper
+
 <details open>
-  <summary>Click to open section</summary>
+  <summary>## GSCAN Paper</summary>
   
 Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
