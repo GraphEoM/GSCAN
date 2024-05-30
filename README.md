@@ -2,7 +2,11 @@
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 ##### Etzion Harari, Naphtali Abudarham & Roee Litman
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-citeseer)](https://paperswithcode.com/sota/graph-clustering-on-citeseer?p=gscan-graph-stability-clustering-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-cora)](https://paperswithcode.com/sota/graph-clustering-on-cora?p=gscan-graph-stability-clustering-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-pubmed)](https://paperswithcode.com/sota/graph-clustering-on-pubmed?p=gscan-graph-stability-clustering-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-citeseer)](https://paperswithcode.com/sota/graph-clustering-on-citeseer?p=gscan-graph-stability-clustering-for)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-cora)](https://paperswithcode.com/sota/graph-clustering-on-cora?p=gscan-graph-stability-clustering-for)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-pubmed)](https://paperswithcode.com/sota/graph-clustering-on-pubmed?p=gscan-graph-stability-clustering-for)
 
 You can find full code example of using GSCAN for graph-clustering in this [**Google Colab Notebook**](https://colab.research.google.com/drive/1NZjeNUK_19OcFc29zq2mE7IGmBz_ZHy8#scrollTo=vwkQ-sxDJjdt).
 
@@ -23,6 +27,9 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans-based-GNN-algorithm)
 
 ## GSCAN Paper
+<details open>
+  <summary>GSCAN Paper</summary>
+  
 Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
 The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster) and published in [**PMLR**](https://proceedings.mlr.press/v231/harari24a.html):
@@ -46,6 +53,7 @@ If you find **GSCAN** useful in your research, you can cite the following paper:
 }
 
 ```
+</details>
 
 ## Install GSCAN
 To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
