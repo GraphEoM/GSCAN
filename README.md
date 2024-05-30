@@ -28,7 +28,7 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 
 ## GSCAN Paper
 <details open>
-  <summary>GSCAN Paper</summary>
+  <summary>Click to open section</summary>
   
 Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
@@ -55,22 +55,10 @@ If you find **GSCAN** useful in your research, you can cite the following paper:
 ```
 </details>
 
-## Install GSCAN
-To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
-
-``` sh
-git clone https://github.com/GraphEoM/GSCAN.git
-cd GSCAN/dist
-pip install gscan-0.1.0-py3-none-any.whl
-```
-
-After the installation, you can simply import GSCAN:
-``` sh
-from gscan import GSCAN
-```
-
 ## Dependencies for installation
-
+<details open>
+  <summary>Click to open section</summary>
+  
 Torch and Torch-Geometric (for Linux):
 ``` sh
 # for CPU:
@@ -88,8 +76,31 @@ umap_learn>=0.5.3
 networkx>=2.8.8
 numpy>=1.23.5
 ```
+</details>
+
+## Install GSCAN
+<details open>
+  <summary>Click to open section</summary>
+  
+To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
+
+``` sh
+git clone https://github.com/GraphEoM/GSCAN.git
+cd GSCAN/dist
+pip install gscan-0.1.0-py3-none-any.whl
+```
+
+After the installation, you can simply import GSCAN:
+``` sh
+from gscan import GSCAN
+```
+</details>
+
 ## Run GSCAN
 
+<details open>
+  <summary>Click to open section</summary>
+  
 #### load libraries
 ``` sh
 import numpy as np
@@ -188,7 +199,13 @@ gnx
 ```
 <networkx.classes.graph.Graph at 0x1c38c4db1c0>
 
+</details>
+
 ## Compare GSCAN results to DAEGC (KMeans based GNN algorithm)
+
+<details open>
+  <summary>Click to open section</summary>
+
 applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
 This repr. created by GNN clustering algorithm that published in 2019 in this paper:
 
@@ -258,6 +275,8 @@ evl(labels,model.gnn_labels(features,edges))
 | GSCAN | 0.640 | 0.314 | 0.513 |
 | GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
 | GSCAN + GNN Expansion | **0.730** | **0.503** | **0.534** |
+
+</details>
 
 ## License
 MIT
