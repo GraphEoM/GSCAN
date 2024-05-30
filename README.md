@@ -26,9 +26,9 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 4. [Run GSCAN](https://github.com/GraphEoM/GSCAN#run-gscan)
 5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans-based-GNN-algorithm)
 
-
+## GSCAN Paper
 <details open>
-  <summary>## GSCAN Paper</summary>
+  <summary></summary>
   
 Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
@@ -57,7 +57,7 @@ If you find **GSCAN** useful in your research, you can cite the following paper:
 
 ## Dependencies for installation
 <details open>
-  <summary>Click to open section</summary>
+  <summary></summary>
   
 Torch and Torch-Geometric (for Linux):
 ``` sh
@@ -80,7 +80,7 @@ numpy>=1.23.5
 
 ## Install GSCAN
 <details open>
-  <summary>Click to open section</summary>
+  <summary></summary>
   
 To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
 
@@ -99,7 +99,7 @@ from gscan import GSCAN
 ## Run GSCAN
 
 <details open>
-  <summary>Click to open section</summary>
+  <summary></summary>
   
 #### load libraries
 ``` sh
@@ -204,7 +204,7 @@ gnx
 ## Compare GSCAN results to DAEGC (KMeans based GNN algorithm)
 
 <details open>
-  <summary>Click to open section</summary>
+  <summary></summary>
 
 applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
 This repr. created by GNN clustering algorithm that published in 2019 in this paper:
