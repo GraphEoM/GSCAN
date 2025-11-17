@@ -2,6 +2,11 @@
 GSCAN: Graph Stability Clustering using Edge-Aware Excess-of-Mass
 ##### Etzion Harari, Naphtali Abudarham & Roee Litman
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-citeseer)](https://paperswithcode.com/sota/graph-clustering-on-citeseer?p=gscan-graph-stability-clustering-for)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-cora)](https://paperswithcode.com/sota/graph-clustering-on-cora?p=gscan-graph-stability-clustering-for)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gscan-graph-stability-clustering-for/graph-clustering-on-pubmed)](https://paperswithcode.com/sota/graph-clustering-on-pubmed?p=gscan-graph-stability-clustering-for)
 
 You can find full code example of using GSCAN for graph-clustering in this [**Google Colab Notebook**](https://colab.research.google.com/drive/1NZjeNUK_19OcFc29zq2mE7IGmBz_ZHy8#scrollTo=vwkQ-sxDJjdt).
 
@@ -22,9 +27,12 @@ You can find full code example of using GSCAN for graph-clustering in this [**Go
 5. [Compare GSCAN results to KMeans](https://github.com/GraphEoM/GSCAN/blob/main/README.md#compare-gscan-results-to-kmeans-based-GNN-algorithm)
 
 ## GSCAN Paper
-Our full paper available here: [GSCAN Paper](https://openreview.net/forum?id=xazYC6pGO5)
+<details open>
+  <summary></summary>
+  
+Our full paper available here: [GSCAN Paper](https://proceedings.mlr.press/v231/harari24a/harari24a.pdf)
 
-The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster):
+The paper presented in the [LOG 2023 Conference](https://logconference.org/) (Learning on Graphs Conference) as a [poster](https://openreview.net/group?id=logconference.io/LOG/2023/Conference#tab-accept-poster) and published in [**PMLR**](https://proceedings.mlr.press/v231/harari24a.html):
 
 ![GSCAN_Poster](https://github.com/GraphEoM/GSCAN/blob/main/pictures/GSCAN_Poster.jpg)
 
@@ -45,23 +53,12 @@ If you find **GSCAN** useful in your research, you can cite the following paper:
 }
 
 ```
-
-## Install GSCAN
-To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
-
-``` sh
-git clone https://github.com/GraphEoM/GSCAN.git
-cd GSCAN/dist
-pip install gscan-0.1.0-py3-none-any.whl
-```
-
-After the installation, you can simply import GSCAN:
-``` sh
-from gscan import GSCAN
-```
+</details>
 
 ## Dependencies for installation
-
+<details open>
+  <summary></summary>
+  
 Torch and Torch-Geometric (for Linux):
 ``` sh
 # for CPU:
@@ -79,8 +76,31 @@ umap_learn>=0.5.3
 networkx>=2.8.8
 numpy>=1.23.5
 ```
+</details>
+
+## Install GSCAN
+<details open>
+  <summary></summary>
+  
+To install GSCAN on your device, you can clone this repo and pip install the [**wheel file**](https://github.com/GraphEoM/GSCAN/blob/main/dist/gscan-0.1.0-py3-none-any.whl) :
+
+``` sh
+git clone https://github.com/GraphEoM/GSCAN.git
+cd GSCAN/dist
+pip install gscan-0.1.0-py3-none-any.whl
+```
+
+After the installation, you can simply import GSCAN:
+``` sh
+from gscan import GSCAN
+```
+</details>
+
 ## Run GSCAN
 
+<details open>
+  <summary></summary>
+  
 #### load libraries
 ``` sh
 import numpy as np
@@ -179,7 +199,13 @@ gnx
 ```
 <networkx.classes.graph.Graph at 0x1c38c4db1c0>
 
-## Compare GSCAN results to KMeans based GNN algorithm
+</details>
+
+## Compare GSCAN results to DAEGC (KMeans based GNN algorithm)
+
+<details open>
+  <summary></summary>
+
 applied on DAEGC output representation, created using this code: [DAEGC](https://github.com/Tiger101010/DAEGC/blob/main/DAEGC/pretrain.py).
 This repr. created by GNN clustering algorithm that published in 2019 in this paper:
 
@@ -205,7 +231,7 @@ model
 
 #### Evaluate results
 
-#### KMeans 
+#### DAEGC (KMeans based) 
 ``` sh
 from sklearn.cluster import KMeans
 from gscan.evaluation import evl
@@ -245,10 +271,12 @@ evl(labels,model.gnn_labels(features,edges))
 
 | Method | F1 | ARI | NMI |
 |:---|:---:|:---:|:---:|
-| KMeans | 0.678 | 0.438 | 0.487 |
+| DAEGC (KMeans based) | 0.678 | 0.438 | 0.487 |
 | GSCAN | 0.640 | 0.314 | 0.513 |
 | GSCAN + Intrinsic Diffusion | 0.722 | 0.477 | 0.525 |
 | GSCAN + GNN Expansion | **0.730** | **0.503** | **0.534** |
+
+</details>
 
 ## License
 MIT
